@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>My profolio</title>
+        <style>
+             body{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+             }
+             h1{
+                font-size: 36px;
+                font-weight: bold;
+                color: blue;
+             }
+             h2{
+                font-size: 24px;
+                color: darkblue;
+             }
+             p{
+                color: gray;
+             }
+             header{
+                background-color: lightblue;
+                padding: 20px;
+                margin-bottom: 30px;
+                border: 2px solid blue;
+                text-align: center;
+             }
+             section{
+                background-color: lightgray;
+                padding: 15px;
+                margin: 20px 0;
+                border: 1px solid gray;
+                border-radius: 5px;
+             }
+             footer{
+                background-color: darkblue;
+                color: white;
+                padding: 15px;
+                text-align: center;
+                margin-top: 30px;
+    
+             }
+             nav{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 15px;
+             }
+             nav a{
+                text-decoration: none;
+                color: darkblue;
+                padding: 8px 16px;
+                border: 1px solid darkblue;
+                border-radius: 4px;
+             }
+             nav a:hover{
+                background-color: darkblue;
+                color: white;
+             }
+             ul{
+                display: flex;
+                gap: 15px;
+                list-style:none;
+                padding: 0;
+             }
+             li{
+                background-color: blue;
+                color: white;
+                padding: 8px 16px;
+                border-radius: 4px;
+             }
+             .projects-grid{
+               display: grid;
+               grid-template-columns: repeat(2,1fr);
+               gap: 20px;
+               margin-top: 20px;
+             }
+             .project{
+               background-color: white;
+               padding: 20px;
+               border: 1px solid lightgray;
+               border-radius: 8px;
+               text-align: center;
+             }
+             .project h3{
+               color: darkblue;
+               margin-top: 0;
+             }
+             body{
+               position: static;
+             }
+             nav{
+               position: sticky;
+               
+               background-color: lightblue;
+               padding: 10px 0;
+               margin: 0 -20px;
+               margin-bottom: 20px;
+             }
+             section:first-child{
+               margin-top: 0;
+
+             }
+             section:last-child{
+               margin-bottom: 0;
+             }
+             .project:nth-child(odd){
+               background-color: #f0f8ff;
+             }
+             .project:nth-child(even){
+               background-color: #e6f3ff;
+             }
+             section#skills ul li:first-child{
+               background-color: red;
+             }
+
+
+
+        </style>
+        <!--<link rel="stylesheet" href="style.css">-->
+    </head>
+    <body>
+        <header>
+            
+            <h1>John smith</h1>
+            <p>Web developer</p>
+            <nav>
+                 <a href="#about">About</a>
+                 <a href="#skills">Skills</a>
+                 <a href="#projects">Projects</a>
+                 <a href="#contact">Contact</a>
+
+            </nav>
+        </header>
+        <main>            
+            <section id="about">
+                <h2>About me</h2>
+                <p>I'm a passionate web developer who 
+                    loves creating amazing websites</p>
+            </section>
+            <section id="skills">
+                <h2>My skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <Li>CSS</Li>
+                    <li>Javaskript</li>
+                </ul>
+            </section>
+            <section id="projects">
+               <h2>My projects</h2>
+               <div class="project grid">
+                  <div class="project">
+                     <h3>Weather app</h3>
+                     <p>A simple weather application</p>
+                  </div>
+                  <div class="project">
+                     <h3>To do list</h3>
+                     <p>Task managment app</p>
+                  </div>
+                  <div class="project">
+                     <h3>Calculator</h3>
+                     <p>Basic Calculator with CSS</p>
+                  </div>
+                  <div class="Project">
+                     <H3>Portofolio</H3>
+                     <p>This very website!</p>
+                  </div>
+               </div>
+            </section>
+
+        </main>
+        <footer id="contact">
+            <p>Contact me : john@email.com</p>
+        </footer>
+        
+        
+    </body>
+</html>
