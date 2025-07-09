@@ -125,8 +125,26 @@
              @media screen and (max-width: 768px){
                .projects-grid{
                   grid-template-columns: 1fr;
-               }
+               
              }
+             nav{
+               flex-direction: column;
+               gap: 10px;
+             }
+             ul{
+               flex-direction: column;
+               align-items: center;
+             }
+             h1{
+               font-size: 28px;
+             }
+            }
+            @media screen and (min-width:1024px){
+               .projects-grid{
+                  grid-template-columns: repeat(3,1fr);
+               }
+            }
+
 
 
 
